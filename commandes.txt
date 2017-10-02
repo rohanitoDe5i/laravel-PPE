@@ -1,0 +1,56 @@
+laravel :
+
+sudo apt install composer
+
+poru uisntaller co;poser
+
+composer create-project --prefer-dist laravel/laravel projet
+
+poru creer le proj
+
+sudo apt install php-...
+
+poru installer les lib manquantes
+
+co;poser update pour mettre a jour les dependances php
+
+ php artisan serve
+
+pour lancer le proj
+
+installer phpmyadmin et mysql-server
+
+creer la db et saisir les identifiants de connexion dans .env
+
+phpartisan make:auth poru installer le service d authentuification
+
+php artisan migrate pour mettre a jour la db
+
+git cote client :
+
+git init .
+
+pour initialiser le depot local
+
+git add --all
+
+pour aeu git indexe tous les nouveaux fichiers
+
+git commit pour enregistrer les modifications
+
+git remote add ...
+
+est donne par github quand on cree le depot et relie le depot local
+a origin - aui est le depot distant
+
+git push
+
+pour envoyer
+
+git pull
+
+poru rapattrier
+
+got cote serveur :
+
+creer un repo *vide*
