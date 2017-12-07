@@ -14,15 +14,15 @@ class CreateAttribuer extends Migration
     public function up()
     {
         Schema::create('attribuer', function (Blueprint $table) {
-            $table->datetime('horairedebut')->primary();
-	    $table->datetime('horairefin')->primary();
-	    $table->integer('numplace')->primary();
-	    $table->integer('iduser')->primary();
+            $table->datetime('horairedebut');
+	    $table->datetime('horairefin');
+	    $table->integer('numplace');
+	    $table->integer('iduser')->unsigned();
             $table->timestamps();
-	    $table->foreign('horairedebut')->references('horairedebut')->on('horaire')->onDelete('cascade');
-	    $table->foreign('horairefin')->references('horairefin')->on('horaire')->onDelete('cascade');
-	    $table->foreign('numplace')->references('numplace')->on('place')->onDelete('cascade');
-	    $table->foreign('iduser')->references('id')->on('users')->onDelete('cascade');
+	    $table->primary(array('horairedebut','horairefin','numplace','iduser'));
+	    $table->foreign(array('horairedebut','horairefin'))->references(array('horairedebut','horairefin'))->on('horaire');
+	    $table->foreign('numplace')->references('numplace')->on('place');
+	    $table->foreign('iduser')->references('id')->on('users');
         });
     }
 

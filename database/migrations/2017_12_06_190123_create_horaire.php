@@ -17,7 +17,7 @@ class CreateHoraire extends Migration
 	    $table->datetime('horairedebut');
 	    $table->datetime('horairefin');
             $table->timestamps();
-	    $table->primary(['horairedebut', 'horairefin']);
+	    $table->primary(array('horairedebut','horairefin'));
         });
     }
 
