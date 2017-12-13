@@ -17,12 +17,11 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('nom');
 	    $table->string('prenom');
-	    $table->string('mdp');
-            $table->string('email');
-            $table->string('password');
-	    $table->boolean('validation');
-	    $table->integer('placefile');
-	    $table->boolean('admin');
+	    $table->string('email');
+	    $table->string('password');
+	    $table->boolean('validation')->default(0);
+	    $table->integer('placefile')->nullable();
+	    $table->boolean('admin')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
