@@ -14,10 +14,10 @@ class CreateHoraire extends Migration
     public function up()
     {
         Schema::create('horaire', function (Blueprint $table) {
-	    $table->datetime('horairedebut');
-	    $table->datetime('horairefin');
+    	    $table->datetime('horairedebut');
+    	    $table->datetime('horairefin');
             $table->timestamps();
-	    $table->primary(array('horairedebut','horairefin'));
+            $table->primary(array('horairedebut','horairefin'));
         });
     }
 
