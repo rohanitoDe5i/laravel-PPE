@@ -38,12 +38,12 @@
                             $email=$user->email;
                             $placefile=$user->placefile;
                             $admin=$user->admin;
-                            if($admin=1)
-                                $admin='oui';
+                            if($admin == 1)
+                                $admin ='oui';
                             else
-                                $admin='non';
+                                $admin ='non';
                             if(!$placefile)
-                                $placefile='aucune';
+                                $placefile = 'aucune';
                             echo"<tr>
                             <td style='border:1px solid black;padding:2px'>$iduser</td>
                             <td style='border:1px solid black;padding:2px'>$nom</td>
