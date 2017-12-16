@@ -21,4 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::view('/places', 'places');
 
+Route::view('/liste_utilisateur', 'liste_utilisateur');
+
 ?>
