@@ -22,7 +22,8 @@
                     $user = DB::table('users')->where('id', $iduser)->first();
                     $admin = $user->admin;
                     if($admin==1)
-                        echo"<br>Espace administrateur :";
+                        echo"<br>Espace administrateur :<br>
+                             <a href='liste_utilisateur'>-Liste des utilisateurs</a>";
                     else
                         echo"<br>Espace utilisateur :
                              <br><a href='places'>Vos places</a>"
