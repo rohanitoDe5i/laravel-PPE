@@ -15,6 +15,19 @@
                     @endif
 
                     You are logged in!
+
+                    
+                    <?php
+                    $iduser = auth()->user()->id;
+                    $user = DB::table('users')->where('id', $iduser)->first();
+                    $admin = $user->admin;
+                    if($admin==1)
+                        echo"Vous êtes administrateur";
+                    else
+                        echo"Vous êtes un utilisateur";
+
+                    ?>
+
                 </div>
             </div>
         </div>
