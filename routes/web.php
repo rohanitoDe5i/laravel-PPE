@@ -25,4 +25,6 @@ Route::view('/liste_utilisateur', 'liste_utilisateur');
 
 Route::view('/liste_place', 'liste_place');
 
+Route::view('/demande_placeutil', 'demande_placeutil');
+
 ?>

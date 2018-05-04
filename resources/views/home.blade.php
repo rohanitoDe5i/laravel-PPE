@@ -27,7 +27,8 @@
                              <br><a href='liste_place'>-Liste des places</a>";
                     else
                         echo"<br>Espace utilisateur :
-                             <br><a href='places'>Vos places</a>"
+                             <br><a href='places'>Vos places</a>
+			     <br><a href='demande_placeutil'>Demander une place</a>"
 
                     ?>
 
